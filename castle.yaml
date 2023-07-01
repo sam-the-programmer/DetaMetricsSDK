@@ -1,0 +1,7 @@
+tasks:
+  deploy:
+    - rm dist -r
+    - rm DetaMetrics.egg-info -r
+    - pip install --upgrade build twine
+    - python -m build
+    - python -m twine upload dist/*

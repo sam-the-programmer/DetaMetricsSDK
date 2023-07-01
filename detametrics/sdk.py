@@ -1,11 +1,15 @@
 import httpx
 
+
 class DetaMetrics:
     def __init__(self, urlId: str, apiKey: str) -> None:
         self.url = "https://" + urlId + ".deta.app"
         self.__apiKey = apiKey
-        self.__headers = {"User-Agent": "DetaMetrics", "X-Space-App-Key": self.__apiKey}
-        print(f"Using DetaMetrics at {self.url}")
+        self.__headers = {
+            "User-Agent": "DetaMetrics",
+            "X-Space-App-Key": self.__apiKey,
+        }
+        print(f"Using DetaMetrics Server at {self.url}")
 
     def __repr__(self) -> str:
         return f"<DetaMetrics url={self.url}>"

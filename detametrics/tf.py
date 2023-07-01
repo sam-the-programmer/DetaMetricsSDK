@@ -2,8 +2,8 @@ import tensorflow as tf
 from .sdk import DetaMetrics
 
 class DetaMetricsTFCallback(tf.keras.callbacks.Callback):
-    def __init__(self, urlId: str) -> None:
-        self.deta_backend = DetaMetrics(urlId)
+    def __init__(self, urlId: str, apiKey: str) -> None:
+        self.deta_backend = DetaMetrics(urlId, apiKey)
 
     def on_epoch_end(self, epoch, logs=None):
         for metric, value in logs.items():

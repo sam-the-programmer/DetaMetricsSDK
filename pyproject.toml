@@ -4,13 +4,16 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "DetaMetrics"
-version = "0.0.2"
+version = "0.0.5"
 authors = [
   { name="SamTheProgrammer" },
 ]
 description = "SDK for DetaMetrics TensorBoard alternative."
 readme = "README.md"
 requires-python = ">=3.7"
+dependencies = [
+  "httpx>=0.13.3"
+]
 classifiers = [
     "Programming Language :: Python :: 3",
     "License :: OSI Approved :: MIT License",
