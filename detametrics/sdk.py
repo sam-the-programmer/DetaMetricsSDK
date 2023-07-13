@@ -3,7 +3,7 @@ import httpx
 
 class DetaMetrics:
     def __init__(self, urlId: str, apiKey: str) -> None:
-        self.url = "https://" + urlId + ".deta.app"
+        self.url = f"https://{urlId}.deta.app"
         self.__apiKey = apiKey
         self.__headers = {
             "User-Agent": "DetaMetrics",
