@@ -35,7 +35,7 @@ from detametrics.tf import DetaMetricsTFCallback
 model = ...
 model.fit(
   ..., # other params here
-  callbacks=[DetaMetricsTFCallback("MY_URL_ID", "MY_API_KEY")]
+  callbacks=[DetaMetricsTFCallback("MY_URL_ID", "MY_API_KEY", log_batch=True)] # if log_batch is True, it logs every batch, else only every epoch
 )
 ```
 
