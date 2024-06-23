@@ -17,13 +17,13 @@ pip install detametrics
 ```
 
 ## Usage
+- Install in Deta Space from https://deta.space/discovery/@sam-the-programmer/detametrics
 
-> All API classes need an URL ID, which can be gotten from the app UI.
-
-> They also need a Deta Space App API key, which can be gotten from...
-> - Click the 3 dots on the app on your Deta Space Canvas
-> - Click **"Keys"**
-> - Add an API Key, and input it in the box on the App UI and in your Python code as seen below
+- All API classes need an URL ID passed as a parameter, which can be found in the app UI.
+- They also need a Deta Space App API key, which can be gotten from...
+  - Click the 3 dots on the app on your Deta Space Canvas
+  - Click **"Keys"**
+  - Add an API Key, and input it in the box on the App UI and in your Python code as seen below
 
 ### TensorFlow Callback
 Requires Tensorflow to be installed.
